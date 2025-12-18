@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Ease - Kesehatan Anda, Prioritas Kami</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-heartbeat"></i> Health Ease
+            </a>
+            <nav class="navbar">
+                <a href="index.html" class="active">Beranda & Profil</a>
+                <a href="products.html">Produk</a>
+            </nav>
+            <div class="header-icons">
+                <div class="cart-btn" id="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Solusi Kesehatan Terpercaya Untuk Anda</h1>
+            <p>Menyediakan informasi kesehatan terkini dan produk berkualitas untuk mendukung gaya hidup sehat Anda.</p>
+            <a href="products.html" class="btn">Belanja Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="profile" id="profile">
+        <div class="container">
+            <h2 class="section-title">Profil Health Ease</h2>
+            <div class="profile-grid">
+                <div class="profile-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Visi</h3>
+                    <p>Menjadi platform kesehatan terdepan yang mengintegrasikan edukasi dan akses mudah terhadap produk
+                        kesehatan berkualitas di Banyumas dan sekitarnya.</p>
+                </div>
+                <div class="profile-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Misi</h3>
+                    <p>Memberikan edukasi kesehatan yang akurat, menyediakan produk kesehatan yang aman dan terjangkau,
+                        serta memberikan pelayanan terbaik bagi pelanggan.</p>
+                </div>
+                <div class="profile-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Tujuan</h3>
+                    <p>Meningkatkan kesadaran masyarakat akan pentingnya kesehatan dan mempermudah akses kebutuhan medis
+                        sehari-hari.</p>
+                </div>
+            </div>
+            <div class="address-info">
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Alamat:</strong> Jl. Raya Kembaran, Kabupaten Banyumas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Health Ease</h3>
+                    <p>Partner kesehatan terpercaya Anda.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Hubungi Kami</h4>
+                    <p>WhatsApp: 0877-6737-1272</p>
+                    <p>Alamat: Jl. Raya Kembaran, Kab. Banyumas</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Health Ease. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Keranjang Belanja</h3>
+            <button id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Items injected by JS -->
+            <p class="empty-msg">Keranjang Anda kosong.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total">Total: <span id="cart-total">Rp 0</span></div>
+            <button class="btn btn-block" id="checkout-btn">Checkout via WhatsApp</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
