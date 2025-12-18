@@ -123,7 +123,7 @@ ul {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.6)), url('https://placehold.co/1920x600/007bff/ffffff?text=Health+Ease+Banner') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 86, 179, 0.8)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
     height: 600px;
     /* Increased height further */
     display: flex;
@@ -135,20 +135,29 @@ ul {
 }
 
 .hero-content {
-    margin-top: 350px;
-    /* Pushes the content significantly lower */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 30px;
-    /* Increased space below title */
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    /* Responsive font size */
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Better contrast */
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    /* Increased space below text (pushes button down) */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    margin-bottom: 30px;
+    line-height: 1.6;
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .hero .btn {
